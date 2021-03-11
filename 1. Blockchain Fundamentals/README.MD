@@ -39,13 +39,13 @@ curl --location --request GET 'http://localhost:8000/blocks/height/0'
 
 The response will show that there is no previous block at height 0 and establish a genesis block hash that will be used in the generation of the subsequent block's hash.
 
-<img src="../assets/img/project1-testGenesisBlock"/>
+<img src="../assets/img/project1-testGenesisBlock.png"/>
 
 ####  Step 2: `requestOwnership`
 
 This endpoint allows a user to generate a message to be signed with a wallet. I used a Bitcore wallet on the Testnet.  The message follows the format `<WALLET_ADDRESS>:<TIME>:starRegistry`.  The wallet address is the required input.  This address is required to perform subsequent steps.
 
-<img src="../assets/img/project1-reqWalletAddress"/>
+<img src="../assets/img/project1-reqWalletAddress.png"/>
 
 **Verify your transaction with a digital signature in the Bitcore Testnet app:**
 
