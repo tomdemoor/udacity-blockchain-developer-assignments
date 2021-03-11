@@ -1,0 +1,16 @@
+{
+  "name": "promisesintro",
+  "version": "1.0.0",
+  "description": "Introduction to javascript promises for blockchain",
+  "main": "promises.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node promiseall.js"
+  },
+  "keywords": [
+    "promises",
+    "blockchain"
+  ],
+  "author": "Tom De Moor",
+  "license": "ISC"
+}

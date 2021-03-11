@@ -1,0 +1,20 @@
+{
+  "name": "practiceblock",
+  "version": "1.0.0",
+  "description": "Learning to generate a hash with data in a basic block",
+  "main": "block.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "keywords": [
+    "block",
+    "blockchain",
+    "practice"
+  ],
+  "author": "Tom De Moor",
+  "license": "ISC",
+  "dependencies": {
+    "crypto-js": "^4.0.0"
+  }
+}

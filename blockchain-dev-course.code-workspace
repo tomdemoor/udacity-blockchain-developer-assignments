@@ -1,0 +1,26 @@
+{
+	"folders": [
+		{
+			"path": "1. Blockchain Fundamentals"
+		},
+		{
+			"path": "2. Ethereum Smart Contracts, tokens and Dapps"
+		},
+		{
+			"path": "3. Blockchain Architecture"
+		},
+		{
+			"path": "4. Career Services"
+		},
+		{
+			"path": "5. Dapp with autonomous smart contracts and oracles"
+		},
+		{
+			"path": "6. Capstone Project"
+		},
+		{
+			"path": "assets"
+		}
+	],
+	"settings": {}
+}
