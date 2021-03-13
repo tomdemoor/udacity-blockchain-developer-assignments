@@ -64,15 +64,15 @@ class Blockchain {
     _addBlock(block) {
         let self = this;
         return new Promise(async (resolve, reject) => {
-            block.height = self.chain.length;
-            block.time = new Date().getTime().toString().slice(0,-3);
-            if (self.chain.length > 0) {
-            block.previousBlockHash = self.chain[self.chain.length -1].hash;
+            if (self.height > 0) {
+                block.previousBlockHash = self.chain[self.chain.length - 1].hash;
             }
+            block.time = (new Date()).getTime().toString().slice(0,-3);
+            block.height = parseInt(self.chain.length);
             block.hash = SHA256(JSON.stringify(block)).toString();
             self.chain.push(block);
-            resolve(block);
-
+            self.height = self.chain.length;
+            self.validateChain().then(() => resolve(block)).catch(() => reject('Invalid chain'));
         });
     }
 
@@ -177,7 +177,6 @@ class Blockchain {
         let self = this;
         let results = [];
         return new Promise((resolve, reject) => {            
-
             self.chain.forEach((b) => {
                 let data = b.getBData();
                 if(data){
@@ -186,10 +185,8 @@ class Blockchain {
                     }
                 }
             });
-
             resolve(results);
         });
-
     }
 
     /**
@@ -202,32 +199,22 @@ class Blockchain {
         let self = this;
         let errorLog = [];
         return new Promise(async (resolve, reject) => {
-            let promises = [];
-            let chainIndex = 0;
-            self.chain.forEach(block => {
-                promises.push(block.validate());
-                if(block.height > 0) {
-                    let previousBlockHash = block.previousBlockHash;
-                    let blockHash = chain[chainIndex-1].hash;
-                    if(blockHash != previousBlockHash){
-                        errorLog.push(`Error - Block Heigh: ${block.height} - Previous Hash don't match.`);
+            let previousBlockHash = null;
+            self.chain.map(b => {
+                b.validate().then(() => {
+                    if (b.previousBlockHash !== previousBlockHash) {
+                        errorLog.push(b);
                     }
-                }
-                chainIndex++;
+                }).catch(() => errorLog.push(b));
             });
-            Promise.all(promises).then((results) => {
-                chainIndex = 0;
-                results.forEach(valid => {
-                    if(!valid){
-                        errorLog.push(`Error - Block Heigh: ${self.chain[chainIndex].height} - Has been Tampered.`);
-                    }
-                    chainIndex++;
-                });
+            if (errorLog.length > 0) {
+                reject(errorLog);
+            } else {
                 resolve(errorLog);
-            }).catch((err) => { console.log(err); reject(err)});
+            }
         });
     }
 
 }
 
-module.exports.Blockchain = Blockchain;   
+module.exports.Blockchain = Blockchain;  
