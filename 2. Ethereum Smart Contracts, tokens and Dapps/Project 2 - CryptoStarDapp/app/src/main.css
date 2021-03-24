@@ -1,0 +1,20 @@
+body{
+    font-family: 'Open Sans';
+    color:white;
+    background-image: url(https://tomdemoor.com/wp-content/uploads/2021/03/Space-CryptostarBG.jpeg);
+    background-size: cover;
+    padding: 15px;
+}
+
+button{
+    font-family: 'Open Sans';
+    background-color: #f44336;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 35px;
+}
