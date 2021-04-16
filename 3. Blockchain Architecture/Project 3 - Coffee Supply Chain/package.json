@@ -1,0 +1,22 @@
+{
+  "name": "coffee-supply-chain",
+  "version": "1.0.0",
+  "description": "Udacity Course Assignment. Ethereum Dapp for tracking items through the Supply Chain.",
+  "main": "index.js",
+  "dependencies": {
+    "ethjs-abi": "^0.2.1",
+    "truffle-hdwallet-provider": "^1.0.17",
+    "web3": "^1.2.1"
+  },
+  "devDependencies": {
+    "dotenv": "^8.2.0",
+    "lite-server": "2.4.0"
+  },
+  "scripts": {
+    "dev": "lite-server",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Tom De Moor",
+  "license": "ISC"
+}
