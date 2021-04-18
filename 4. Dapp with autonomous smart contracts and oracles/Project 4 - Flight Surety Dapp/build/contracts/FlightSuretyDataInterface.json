@@ -1,0 +1,3514 @@
+{
+  "contractName": "FlightSuretyDataInterface",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "account",
+          "type": "address"
+        },
+        {
+          "internalType": "bool",
+          "name": "isOperational",
+          "type": "bool"
+        }
+      ],
+      "name": "_registerAirline",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "account",
+          "type": "address"
+        }
+      ],
+      "name": "getAirlineOperatingStatus",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "account",
+          "type": "address"
+        },
+        {
+          "internalType": "bool",
+          "name": "status",
+          "type": "bool"
+        }
+      ],
+      "name": "setAirlineOperatingStatus",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "account",
+          "type": "address"
+        }
+      ],
+      "name": "getAirlineRegistrationStatus",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "airline",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "amount",
+          "type": "uint256"
+        }
+      ],
+      "name": "fundAirline",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "airline",
+          "type": "address"
+        }
+      ],
+      "name": "getAirlineFunding",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "account",
+          "type": "address"
+        }
+      ],
+      "name": "getVoteCounter",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "airline",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "count",
+          "type": "uint256"
+        }
+      ],
+      "name": "addVoterCounter",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "account",
+          "type": "address"
+        }
+      ],
+      "name": "resetVoteCounter",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "voter",
+          "type": "address"
+        }
+      ],
+      "name": "getVoterStatus",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "voter",
+          "type": "address"
+        }
+      ],
+      "name": "addVoters",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "airline",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "passenger",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "amount",
+          "type": "uint256"
+        }
+      ],
+      "name": "registerInsurance",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "airline",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "passenger",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "amount",
+          "type": "uint256"
+        }
+      ],
+      "name": "creditInsurees",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "airline",
+          "type": "address"
+        }
+      ],
+      "name": "getInsuredPassenger_amount",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "passenger",
+          "type": "address"
+        }
+      ],
+      "name": "getPassengerCredit",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "passenger",
+          "type": "address"
+        }
+      ],
+      "name": "withdraw",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "multiCallsLength",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.6.5+commit.f956cc89\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"address\",\"name\":\"account\",\"type\":\"address\"},{\"internalType\":\"bool\",\"name\":\"isOperational\",\"type\":\"bool\"}],\"name\":\"_registerAirline\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"airline\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"count\",\"type\":\"uint256\"}],\"name\":\"addVoterCounter\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"voter\",\"type\":\"address\"}],\"name\":\"addVoters\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"airline\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"passenger\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"amount\",\"type\":\"uint256\"}],\"name\":\"creditInsurees\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"airline\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"amount\",\"type\":\"uint256\"}],\"name\":\"fundAirline\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"airline\",\"type\":\"address\"}],\"name\":\"getAirlineFunding\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"account\",\"type\":\"address\"}],\"name\":\"getAirlineOperatingStatus\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"account\",\"type\":\"address\"}],\"name\":\"getAirlineRegistrationStatus\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"airline\",\"type\":\"address\"}],\"name\":\"getInsuredPassenger_amount\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"passenger\",\"type\":\"address\"}],\"name\":\"getPassengerCredit\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"account\",\"type\":\"address\"}],\"name\":\"getVoteCounter\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"voter\",\"type\":\"address\"}],\"name\":\"getVoterStatus\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"multiCallsLength\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"airline\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"passenger\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"amount\",\"type\":\"uint256\"}],\"name\":\"registerInsurance\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"account\",\"type\":\"address\"}],\"name\":\"resetVoteCounter\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"account\",\"type\":\"address\"},{\"internalType\":\"bool\",\"name\":\"status\",\"type\":\"bool\"}],\"name\":\"setAirlineOperatingStatus\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"passenger\",\"type\":\"address\"}],\"name\":\"withdraw\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/Users/tomdemoor/Documents/Udacity Submit/Udacity - Flight Surety Dapp/contracts/DataInterfaceContract.sol\":\"FlightSuretyDataInterface\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/Users/tomdemoor/Documents/Udacity Submit/Udacity - Flight Surety Dapp/contracts/DataInterfaceContract.sol\":{\"keccak256\":\"0xe06e8addb6fe7c97978be3edd684948d7febaf271d20c7b6b17cb64554d754a7\",\"urls\":[\"bzz-raw://42b55589e82abbfed8551b52e011b7f65c97f162a5a583573c6c7a1fc616a35f\",\"dweb:/ipfs/QmTYi18toCNLEGxQxNXGCmVLe1yLVHgc2LSZZrrF3w8Hmb\"]}},\"version\":1}",
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "immutableReferences": {},
+  "sourceMap": "",
+  "deployedSourceMap": "",
+  "source": "pragma solidity >=0.6.0 <0.8.0;\n\nabstract contract FlightSuretyDataInterface {\n  // AIRLINE\n  function _registerAirline(address account, bool isOperational) virtual external;\n  function getAirlineOperatingStatus(address account) virtual external returns(bool);\n  function setAirlineOperatingStatus(address account, bool status) virtual external;\n  function getAirlineRegistrationStatus(address account) virtual external returns(bool);\n  function fundAirline(address airline, uint256 amount) virtual external;\n  function getAirlineFunding(address airline) virtual external returns(uint256);\n\n  // MULTI-PARTY CONSENSUS\n  function getVoteCounter(address account) virtual external  returns(uint);\n  function addVoterCounter(address airline, uint count) virtual external;\n  function resetVoteCounter(address account) virtual external;\n  function getVoterStatus(address voter) virtual external returns(bool);\n  function addVoters(address voter) virtual external;\n\n  // PASSENGER\n  function registerInsurance(address airline, address passenger, uint256 amount) virtual external;\n  function creditInsurees(address airline, address passenger, uint256 amount) virtual external;\n  function getInsuredPassenger_amount(address airline) virtual external returns(address, uint256);\n  function getPassengerCredit(address passenger) virtual external returns(uint256);\n  function withdraw(address passenger) virtual external returns(uint256);\n\n  // UTILITY\n  function multiCallsLength() virtual external returns(uint);\n}",
+  "sourcePath": "/Users/tomdemoor/Documents/Udacity Submit/Udacity - Flight Surety Dapp/contracts/DataInterfaceContract.sol",
+  "ast": {
+    "absolutePath": "/Users/tomdemoor/Documents/Udacity Submit/Udacity - Flight Surety Dapp/contracts/DataInterfaceContract.sol",
+    "exportedSymbols": {
+      "FlightSuretyDataInterface": [
+        121
+      ]
+    },
+    "id": 122,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 1,
+        "literals": [
+          "solidity",
+          ">=",
+          "0.6",
+          ".0",
+          "<",
+          "0.8",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:31:0"
+      },
+      {
+        "abstract": true,
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": false,
+        "id": 121,
+        "linearizedBaseContracts": [
+          121
+        ],
+        "name": "FlightSuretyDataInterface",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "body": null,
+            "documentation": null,
+            "functionSelector": "f1cba25e",
+            "id": 8,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "_registerAirline",
+            "nodeType": "FunctionDefinition",
+            "overrides": null,
+            "parameters": {
+              "id": 6,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 3,
+                  "name": "account",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 8,
+                  "src": "120:15:0",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 2,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "120:7:0",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 5,
+                  "name": "isOperational",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 8,
+                  "src": "137:18:0",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  },
+                  "typeName": {
+                    "id": 4,
+                    "name": "bool",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "137:4:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "119:37:0"
+            },
+            "returnParameters": {
+              "id": 7,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "173:0:0"
+            },
+            "scope": 121,
+            "src": "94:80:0",
+            "stateMutability": "nonpayable",
+            "virtual": true,
+            "visibility": "external"
+          },
+          {
+            "body": null,
+            "documentation": null,
+            "functionSelector": "cb4f3acb",
+            "id": 15,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getAirlineOperatingStatus",
+            "nodeType": "FunctionDefinition",
+            "overrides": null,
+            "parameters": {
+              "id": 11,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 10,
+                  "name": "account",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 15,
+                  "src": "212:15:0",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 9,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "212:7:0",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "211:17:0"
+            },
+            "returnParameters": {
+              "id": 14,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 13,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 15,
+                  "src": "254:4:0",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  },
+                  "typeName": {
+                    "id": 12,
+                    "name": "bool",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "254:4:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "253:6:0"
+            },
+            "scope": 121,
+            "src": "177:83:0",
+            "stateMutability": "nonpayable",
+            "virtual": true,
+            "visibility": "external"
+          },
+          {
+            "body": null,
+            "documentation": null,
+            "functionSelector": "71e63aee",
+            "id": 22,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "setAirlineOperatingStatus",
+            "nodeType": "FunctionDefinition",
+            "overrides": null,
+            "parameters": {
+              "id": 20,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 17,
+                  "name": "account",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 22,
+                  "src": "298:15:0",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 16,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "298:7:0",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 19,
+                  "name": "status",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 22,
+                  "src": "315:11:0",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  },
+                  "typeName": {
+                    "id": 18,
+                    "name": "bool",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "315:4:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "297:30:0"
+            },
+            "returnParameters": {
+              "id": 21,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "344:0:0"
+            },
+            "scope": 121,
+            "src": "263:82:0",
+            "stateMutability": "nonpayable",
+            "virtual": true,
+            "visibility": "external"
+          },
+          {
+            "body": null,
+            "documentation": null,
+            "functionSelector": "1eeb8858",
+            "id": 29,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getAirlineRegistrationStatus",
+            "nodeType": "FunctionDefinition",
+            "overrides": null,
+            "parameters": {
+              "id": 25,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 24,
+                  "name": "account",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 29,
+                  "src": "386:15:0",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 23,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "386:7:0",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "385:17:0"
+            },
+            "returnParameters": {
+              "id": 28,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 27,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 29,
+                  "src": "428:4:0",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  },
+                  "typeName": {
+                    "id": 26,
+                    "name": "bool",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "428:4:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "427:6:0"
+            },
+            "scope": 121,
+            "src": "348:86:0",
+            "stateMutability": "nonpayable",
+            "virtual": true,
+            "visibility": "external"
+          },
+          {
+            "body": null,
+            "documentation": null,
+            "functionSelector": "f1a81e72",
+            "id": 36,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "fundAirline",
+            "nodeType": "FunctionDefinition",
+            "overrides": null,
+            "parameters": {
+              "id": 34,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 31,
+                  "name": "airline",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 36,
+                  "src": "458:15:0",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 30,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "458:7:0",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 33,
+                  "name": "amount",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 36,
+                  "src": "475:14:0",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 32,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "475:7:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "457:33:0"
+            },
+            "returnParameters": {
+              "id": 35,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "507:0:0"
+            },
+            "scope": 121,
+            "src": "437:71:0",
+            "stateMutability": "nonpayable",
+            "virtual": true,
+            "visibility": "external"
+          },
+          {
+            "body": null,
+            "documentation": null,
+            "functionSelector": "94e2177a",
+            "id": 43,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getAirlineFunding",
+            "nodeType": "FunctionDefinition",
+            "overrides": null,
+            "parameters": {
+              "id": 39,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 38,
+                  "name": "airline",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 43,
+                  "src": "538:15:0",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 37,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "538:7:0",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "537:17:0"
+            },
+            "returnParameters": {
+              "id": 42,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 41,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 43,
+                  "src": "580:7:0",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 40,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "580:7:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "579:9:0"
+            },
+            "scope": 121,
+            "src": "511:78:0",
+            "stateMutability": "nonpayable",
+            "virtual": true,
+            "visibility": "external"
+          },
+          {
+            "body": null,
+            "documentation": null,
+            "functionSelector": "be5e04a6",
+            "id": 50,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getVoteCounter",
+            "nodeType": "FunctionDefinition",
+            "overrides": null,
+            "parameters": {
+              "id": 46,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 45,
+                  "name": "account",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 50,
+                  "src": "644:15:0",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 44,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "644:7:0",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "643:17:0"
+            },
+            "returnParameters": {
+              "id": 49,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 48,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 50,
+                  "src": "687:4:0",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 47,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "687:4:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "686:6:0"
+            },
+            "scope": 121,
+            "src": "620:73:0",
+            "stateMutability": "nonpayable",
+            "virtual": true,
+            "visibility": "external"
+          },
+          {
+            "body": null,
+            "documentation": null,
+            "functionSelector": "597f264f",
+            "id": 57,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "addVoterCounter",
+            "nodeType": "FunctionDefinition",
+            "overrides": null,
+            "parameters": {
+              "id": 55,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 52,
+                  "name": "airline",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 57,
+                  "src": "721:15:0",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 51,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "721:7:0",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 54,
+                  "name": "count",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 57,
+                  "src": "738:10:0",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 53,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "738:4:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "720:29:0"
+            },
+            "returnParameters": {
+              "id": 56,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "766:0:0"
+            },
+            "scope": 121,
+            "src": "696:71:0",
+            "stateMutability": "nonpayable",
+            "virtual": true,
+            "visibility": "external"
+          },
+          {
+            "body": null,
+            "documentation": null,
+            "functionSelector": "f98e1536",
+            "id": 62,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "resetVoteCounter",
+            "nodeType": "FunctionDefinition",
+            "overrides": null,
+            "parameters": {
+              "id": 60,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 59,
+                  "name": "account",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 62,
+                  "src": "796:15:0",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 58,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "796:7:0",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "795:17:0"
+            },
+            "returnParameters": {
+              "id": 61,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "829:0:0"
+            },
+            "scope": 121,
+            "src": "770:60:0",
+            "stateMutability": "nonpayable",
+            "virtual": true,
+            "visibility": "external"
+          },
+          {
+            "body": null,
+            "documentation": null,
+            "functionSelector": "78e3ef20",
+            "id": 69,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getVoterStatus",
+            "nodeType": "FunctionDefinition",
+            "overrides": null,
+            "parameters": {
+              "id": 65,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 64,
+                  "name": "voter",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 69,
+                  "src": "857:13:0",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 63,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "857:7:0",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "856:15:0"
+            },
+            "returnParameters": {
+              "id": 68,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 67,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 69,
+                  "src": "897:4:0",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  },
+                  "typeName": {
+                    "id": 66,
+                    "name": "bool",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "897:4:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "896:6:0"
+            },
+            "scope": 121,
+            "src": "833:70:0",
+            "stateMutability": "nonpayable",
+            "virtual": true,
+            "visibility": "external"
+          },
+          {
+            "body": null,
+            "documentation": null,
+            "functionSelector": "4c105d1b",
+            "id": 74,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "addVoters",
+            "nodeType": "FunctionDefinition",
+            "overrides": null,
+            "parameters": {
+              "id": 72,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 71,
+                  "name": "voter",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 74,
+                  "src": "925:13:0",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 70,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "925:7:0",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "924:15:0"
+            },
+            "returnParameters": {
+              "id": 73,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "956:0:0"
+            },
+            "scope": 121,
+            "src": "906:51:0",
+            "stateMutability": "nonpayable",
+            "virtual": true,
+            "visibility": "external"
+          },
+          {
+            "body": null,
+            "documentation": null,
+            "functionSelector": "8b4b2774",
+            "id": 83,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "registerInsurance",
+            "nodeType": "FunctionDefinition",
+            "overrides": null,
+            "parameters": {
+              "id": 81,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 76,
+                  "name": "airline",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 83,
+                  "src": "1003:15:0",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 75,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1003:7:0",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 78,
+                  "name": "passenger",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 83,
+                  "src": "1020:17:0",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 77,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1020:7:0",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 80,
+                  "name": "amount",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 83,
+                  "src": "1039:14:0",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 79,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1039:7:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1002:52:0"
+            },
+            "returnParameters": {
+              "id": 82,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1071:0:0"
+            },
+            "scope": 121,
+            "src": "976:96:0",
+            "stateMutability": "nonpayable",
+            "virtual": true,
+            "visibility": "external"
+          },
+          {
+            "body": null,
+            "documentation": null,
+            "functionSelector": "d1598dca",
+            "id": 92,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "creditInsurees",
+            "nodeType": "FunctionDefinition",
+            "overrides": null,
+            "parameters": {
+              "id": 90,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 85,
+                  "name": "airline",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 92,
+                  "src": "1099:15:0",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 84,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1099:7:0",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 87,
+                  "name": "passenger",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 92,
+                  "src": "1116:17:0",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 86,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1116:7:0",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 89,
+                  "name": "amount",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 92,
+                  "src": "1135:14:0",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 88,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1135:7:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1098:52:0"
+            },
+            "returnParameters": {
+              "id": 91,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1167:0:0"
+            },
+            "scope": 121,
+            "src": "1075:93:0",
+            "stateMutability": "nonpayable",
+            "virtual": true,
+            "visibility": "external"
+          },
+          {
+            "body": null,
+            "documentation": null,
+            "functionSelector": "1f4cea0c",
+            "id": 101,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getInsuredPassenger_amount",
+            "nodeType": "FunctionDefinition",
+            "overrides": null,
+            "parameters": {
+              "id": 95,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 94,
+                  "name": "airline",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 101,
+                  "src": "1207:15:0",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 93,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1207:7:0",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1206:17:0"
+            },
+            "returnParameters": {
+              "id": 100,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 97,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 101,
+                  "src": "1249:7:0",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 96,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1249:7:0",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 99,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 101,
+                  "src": "1258:7:0",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 98,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1258:7:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1248:18:0"
+            },
+            "scope": 121,
+            "src": "1171:96:0",
+            "stateMutability": "nonpayable",
+            "virtual": true,
+            "visibility": "external"
+          },
+          {
+            "body": null,
+            "documentation": null,
+            "functionSelector": "05b64e98",
+            "id": 108,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getPassengerCredit",
+            "nodeType": "FunctionDefinition",
+            "overrides": null,
+            "parameters": {
+              "id": 104,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 103,
+                  "name": "passenger",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 108,
+                  "src": "1298:17:0",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 102,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1298:7:0",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1297:19:0"
+            },
+            "returnParameters": {
+              "id": 107,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 106,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 108,
+                  "src": "1342:7:0",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 105,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1342:7:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1341:9:0"
+            },
+            "scope": 121,
+            "src": "1270:81:0",
+            "stateMutability": "nonpayable",
+            "virtual": true,
+            "visibility": "external"
+          },
+          {
+            "body": null,
+            "documentation": null,
+            "functionSelector": "51cff8d9",
+            "id": 115,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "withdraw",
+            "nodeType": "FunctionDefinition",
+            "overrides": null,
+            "parameters": {
+              "id": 111,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 110,
+                  "name": "passenger",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 115,
+                  "src": "1372:17:0",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 109,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1372:7:0",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1371:19:0"
+            },
+            "returnParameters": {
+              "id": 114,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 113,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 115,
+                  "src": "1416:7:0",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 112,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1416:7:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1415:9:0"
+            },
+            "scope": 121,
+            "src": "1354:71:0",
+            "stateMutability": "nonpayable",
+            "virtual": true,
+            "visibility": "external"
+          },
+          {
+            "body": null,
+            "documentation": null,
+            "functionSelector": "174c7c65",
+            "id": 120,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "multiCallsLength",
+            "nodeType": "FunctionDefinition",
+            "overrides": null,
+            "parameters": {
+              "id": 116,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1467:2:0"
+            },
+            "returnParameters": {
+              "id": 119,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 118,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 120,
+                  "src": "1495:4:0",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 117,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1495:4:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1494:6:0"
+            },
+            "scope": 121,
+            "src": "1442:59:0",
+            "stateMutability": "nonpayable",
+            "virtual": true,
+            "visibility": "external"
+          }
+        ],
+        "scope": 122,
+        "src": "33:1470:0"
+      }
+    ],
+    "src": "0:1503:0"
+  },
+  "legacyAST": {
+    "attributes": {
+      "absolutePath": "/Users/tomdemoor/Documents/Udacity Submit/Udacity - Flight Surety Dapp/contracts/DataInterfaceContract.sol",
+      "exportedSymbols": {
+        "FlightSuretyDataInterface": [
+          121
+        ]
+      }
+    },
+    "children": [
+      {
+        "attributes": {
+          "literals": [
+            "solidity",
+            ">=",
+            "0.6",
+            ".0",
+            "<",
+            "0.8",
+            ".0"
+          ]
+        },
+        "id": 1,
+        "name": "PragmaDirective",
+        "src": "0:31:0"
+      },
+      {
+        "attributes": {
+          "abstract": true,
+          "baseContracts": [
+            null
+          ],
+          "contractDependencies": [
+            null
+          ],
+          "contractKind": "contract",
+          "documentation": null,
+          "fullyImplemented": false,
+          "linearizedBaseContracts": [
+            121
+          ],
+          "name": "FlightSuretyDataInterface",
+          "scope": 122
+        },
+        "children": [
+          {
+            "attributes": {
+              "body": null,
+              "documentation": null,
+              "functionSelector": "f1cba25e",
+              "implemented": false,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "_registerAirline",
+              "overrides": null,
+              "scope": 121,
+              "stateMutability": "nonpayable",
+              "virtual": true,
+              "visibility": "external"
+            },
+            "children": [
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "account",
+                      "overrides": null,
+                      "scope": 8,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "address",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "address",
+                          "stateMutability": "nonpayable",
+                          "type": "address"
+                        },
+                        "id": 2,
+                        "name": "ElementaryTypeName",
+                        "src": "120:7:0"
+                      }
+                    ],
+                    "id": 3,
+                    "name": "VariableDeclaration",
+                    "src": "120:15:0"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "isOperational",
+                      "overrides": null,
+                      "scope": 8,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "bool",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "bool",
+                          "type": "bool"
+                        },
+                        "id": 4,
+                        "name": "ElementaryTypeName",
+                        "src": "137:4:0"
+                      }
+                    ],
+                    "id": 5,
+                    "name": "VariableDeclaration",
+                    "src": "137:18:0"
+                  }
+                ],
+                "id": 6,
+                "name": "ParameterList",
+                "src": "119:37:0"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 7,
+                "name": "ParameterList",
+                "src": "173:0:0"
+              }
+            ],
+            "id": 8,
+            "name": "FunctionDefinition",
+            "src": "94:80:0"
+          },
+          {
+            "attributes": {
+              "body": null,
+              "documentation": null,
+              "functionSelector": "cb4f3acb",
+              "implemented": false,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "getAirlineOperatingStatus",
+              "overrides": null,
+              "scope": 121,
+              "stateMutability": "nonpayable",
+              "virtual": true,
+              "visibility": "external"
+            },
+            "children": [
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "account",
+                      "overrides": null,
+                      "scope": 15,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "address",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "address",
+                          "stateMutability": "nonpayable",
+                          "type": "address"
+                        },
+                        "id": 9,
+                        "name": "ElementaryTypeName",
+                        "src": "212:7:0"
+                      }
+                    ],
+                    "id": 10,
+                    "name": "VariableDeclaration",
+                    "src": "212:15:0"
+                  }
+                ],
+                "id": 11,
+                "name": "ParameterList",
+                "src": "211:17:0"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "",
+                      "overrides": null,
+                      "scope": 15,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "bool",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "bool",
+                          "type": "bool"
+                        },
+                        "id": 12,
+                        "name": "ElementaryTypeName",
+                        "src": "254:4:0"
+                      }
+                    ],
+                    "id": 13,
+                    "name": "VariableDeclaration",
+                    "src": "254:4:0"
+                  }
+                ],
+                "id": 14,
+                "name": "ParameterList",
+                "src": "253:6:0"
+              }
+            ],
+            "id": 15,
+            "name": "FunctionDefinition",
+            "src": "177:83:0"
+          },
+          {
+            "attributes": {
+              "body": null,
+              "documentation": null,
+              "functionSelector": "71e63aee",
+              "implemented": false,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "setAirlineOperatingStatus",
+              "overrides": null,
+              "scope": 121,
+              "stateMutability": "nonpayable",
+              "virtual": true,
+              "visibility": "external"
+            },
+            "children": [
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "account",
+                      "overrides": null,
+                      "scope": 22,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "address",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "address",
+                          "stateMutability": "nonpayable",
+                          "type": "address"
+                        },
+                        "id": 16,
+                        "name": "ElementaryTypeName",
+                        "src": "298:7:0"
+                      }
+                    ],
+                    "id": 17,
+                    "name": "VariableDeclaration",
+                    "src": "298:15:0"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "status",
+                      "overrides": null,
+                      "scope": 22,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "bool",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "bool",
+                          "type": "bool"
+                        },
+                        "id": 18,
+                        "name": "ElementaryTypeName",
+                        "src": "315:4:0"
+                      }
+                    ],
+                    "id": 19,
+                    "name": "VariableDeclaration",
+                    "src": "315:11:0"
+                  }
+                ],
+                "id": 20,
+                "name": "ParameterList",
+                "src": "297:30:0"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 21,
+                "name": "ParameterList",
+                "src": "344:0:0"
+              }
+            ],
+            "id": 22,
+            "name": "FunctionDefinition",
+            "src": "263:82:0"
+          },
+          {
+            "attributes": {
+              "body": null,
+              "documentation": null,
+              "functionSelector": "1eeb8858",
+              "implemented": false,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "getAirlineRegistrationStatus",
+              "overrides": null,
+              "scope": 121,
+              "stateMutability": "nonpayable",
+              "virtual": true,
+              "visibility": "external"
+            },
+            "children": [
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "account",
+                      "overrides": null,
+                      "scope": 29,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "address",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "address",
+                          "stateMutability": "nonpayable",
+                          "type": "address"
+                        },
+                        "id": 23,
+                        "name": "ElementaryTypeName",
+                        "src": "386:7:0"
+                      }
+                    ],
+                    "id": 24,
+                    "name": "VariableDeclaration",
+                    "src": "386:15:0"
+                  }
+                ],
+                "id": 25,
+                "name": "ParameterList",
+                "src": "385:17:0"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "",
+                      "overrides": null,
+                      "scope": 29,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "bool",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "bool",
+                          "type": "bool"
+                        },
+                        "id": 26,
+                        "name": "ElementaryTypeName",
+                        "src": "428:4:0"
+                      }
+                    ],
+                    "id": 27,
+                    "name": "VariableDeclaration",
+                    "src": "428:4:0"
+                  }
+                ],
+                "id": 28,
+                "name": "ParameterList",
+                "src": "427:6:0"
+              }
+            ],
+            "id": 29,
+            "name": "FunctionDefinition",
+            "src": "348:86:0"
+          },
+          {
+            "attributes": {
+              "body": null,
+              "documentation": null,
+              "functionSelector": "f1a81e72",
+              "implemented": false,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "fundAirline",
+              "overrides": null,
+              "scope": 121,
+              "stateMutability": "nonpayable",
+              "virtual": true,
+              "visibility": "external"
+            },
+            "children": [
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "airline",
+                      "overrides": null,
+                      "scope": 36,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "address",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "address",
+                          "stateMutability": "nonpayable",
+                          "type": "address"
+                        },
+                        "id": 30,
+                        "name": "ElementaryTypeName",
+                        "src": "458:7:0"
+                      }
+                    ],
+                    "id": 31,
+                    "name": "VariableDeclaration",
+                    "src": "458:15:0"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "amount",
+                      "overrides": null,
+                      "scope": 36,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint256",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint256",
+                          "type": "uint256"
+                        },
+                        "id": 32,
+                        "name": "ElementaryTypeName",
+                        "src": "475:7:0"
+                      }
+                    ],
+                    "id": 33,
+                    "name": "VariableDeclaration",
+                    "src": "475:14:0"
+                  }
+                ],
+                "id": 34,
+                "name": "ParameterList",
+                "src": "457:33:0"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 35,
+                "name": "ParameterList",
+                "src": "507:0:0"
+              }
+            ],
+            "id": 36,
+            "name": "FunctionDefinition",
+            "src": "437:71:0"
+          },
+          {
+            "attributes": {
+              "body": null,
+              "documentation": null,
+              "functionSelector": "94e2177a",
+              "implemented": false,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "getAirlineFunding",
+              "overrides": null,
+              "scope": 121,
+              "stateMutability": "nonpayable",
+              "virtual": true,
+              "visibility": "external"
+            },
+            "children": [
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "airline",
+                      "overrides": null,
+                      "scope": 43,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "address",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "address",
+                          "stateMutability": "nonpayable",
+                          "type": "address"
+                        },
+                        "id": 37,
+                        "name": "ElementaryTypeName",
+                        "src": "538:7:0"
+                      }
+                    ],
+                    "id": 38,
+                    "name": "VariableDeclaration",
+                    "src": "538:15:0"
+                  }
+                ],
+                "id": 39,
+                "name": "ParameterList",
+                "src": "537:17:0"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "",
+                      "overrides": null,
+                      "scope": 43,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint256",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint256",
+                          "type": "uint256"
+                        },
+                        "id": 40,
+                        "name": "ElementaryTypeName",
+                        "src": "580:7:0"
+                      }
+                    ],
+                    "id": 41,
+                    "name": "VariableDeclaration",
+                    "src": "580:7:0"
+                  }
+                ],
+                "id": 42,
+                "name": "ParameterList",
+                "src": "579:9:0"
+              }
+            ],
+            "id": 43,
+            "name": "FunctionDefinition",
+            "src": "511:78:0"
+          },
+          {
+            "attributes": {
+              "body": null,
+              "documentation": null,
+              "functionSelector": "be5e04a6",
+              "implemented": false,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "getVoteCounter",
+              "overrides": null,
+              "scope": 121,
+              "stateMutability": "nonpayable",
+              "virtual": true,
+              "visibility": "external"
+            },
+            "children": [
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "account",
+                      "overrides": null,
+                      "scope": 50,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "address",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "address",
+                          "stateMutability": "nonpayable",
+                          "type": "address"
+                        },
+                        "id": 44,
+                        "name": "ElementaryTypeName",
+                        "src": "644:7:0"
+                      }
+                    ],
+                    "id": 45,
+                    "name": "VariableDeclaration",
+                    "src": "644:15:0"
+                  }
+                ],
+                "id": 46,
+                "name": "ParameterList",
+                "src": "643:17:0"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "",
+                      "overrides": null,
+                      "scope": 50,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint256",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint",
+                          "type": "uint256"
+                        },
+                        "id": 47,
+                        "name": "ElementaryTypeName",
+                        "src": "687:4:0"
+                      }
+                    ],
+                    "id": 48,
+                    "name": "VariableDeclaration",
+                    "src": "687:4:0"
+                  }
+                ],
+                "id": 49,
+                "name": "ParameterList",
+                "src": "686:6:0"
+              }
+            ],
+            "id": 50,
+            "name": "FunctionDefinition",
+            "src": "620:73:0"
+          },
+          {
+            "attributes": {
+              "body": null,
+              "documentation": null,
+              "functionSelector": "597f264f",
+              "implemented": false,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "addVoterCounter",
+              "overrides": null,
+              "scope": 121,
+              "stateMutability": "nonpayable",
+              "virtual": true,
+              "visibility": "external"
+            },
+            "children": [
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "airline",
+                      "overrides": null,
+                      "scope": 57,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "address",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "address",
+                          "stateMutability": "nonpayable",
+                          "type": "address"
+                        },
+                        "id": 51,
+                        "name": "ElementaryTypeName",
+                        "src": "721:7:0"
+                      }
+                    ],
+                    "id": 52,
+                    "name": "VariableDeclaration",
+                    "src": "721:15:0"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "count",
+                      "overrides": null,
+                      "scope": 57,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint256",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint",
+                          "type": "uint256"
+                        },
+                        "id": 53,
+                        "name": "ElementaryTypeName",
+                        "src": "738:4:0"
+                      }
+                    ],
+                    "id": 54,
+                    "name": "VariableDeclaration",
+                    "src": "738:10:0"
+                  }
+                ],
+                "id": 55,
+                "name": "ParameterList",
+                "src": "720:29:0"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 56,
+                "name": "ParameterList",
+                "src": "766:0:0"
+              }
+            ],
+            "id": 57,
+            "name": "FunctionDefinition",
+            "src": "696:71:0"
+          },
+          {
+            "attributes": {
+              "body": null,
+              "documentation": null,
+              "functionSelector": "f98e1536",
+              "implemented": false,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "resetVoteCounter",
+              "overrides": null,
+              "scope": 121,
+              "stateMutability": "nonpayable",
+              "virtual": true,
+              "visibility": "external"
+            },
+            "children": [
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "account",
+                      "overrides": null,
+                      "scope": 62,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "address",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "address",
+                          "stateMutability": "nonpayable",
+                          "type": "address"
+                        },
+                        "id": 58,
+                        "name": "ElementaryTypeName",
+                        "src": "796:7:0"
+                      }
+                    ],
+                    "id": 59,
+                    "name": "VariableDeclaration",
+                    "src": "796:15:0"
+                  }
+                ],
+                "id": 60,
+                "name": "ParameterList",
+                "src": "795:17:0"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 61,
+                "name": "ParameterList",
+                "src": "829:0:0"
+              }
+            ],
+            "id": 62,
+            "name": "FunctionDefinition",
+            "src": "770:60:0"
+          },
+          {
+            "attributes": {
+              "body": null,
+              "documentation": null,
+              "functionSelector": "78e3ef20",
+              "implemented": false,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "getVoterStatus",
+              "overrides": null,
+              "scope": 121,
+              "stateMutability": "nonpayable",
+              "virtual": true,
+              "visibility": "external"
+            },
+            "children": [
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "voter",
+                      "overrides": null,
+                      "scope": 69,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "address",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "address",
+                          "stateMutability": "nonpayable",
+                          "type": "address"
+                        },
+                        "id": 63,
+                        "name": "ElementaryTypeName",
+                        "src": "857:7:0"
+                      }
+                    ],
+                    "id": 64,
+                    "name": "VariableDeclaration",
+                    "src": "857:13:0"
+                  }
+                ],
+                "id": 65,
+                "name": "ParameterList",
+                "src": "856:15:0"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "",
+                      "overrides": null,
+                      "scope": 69,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "bool",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "bool",
+                          "type": "bool"
+                        },
+                        "id": 66,
+                        "name": "ElementaryTypeName",
+                        "src": "897:4:0"
+                      }
+                    ],
+                    "id": 67,
+                    "name": "VariableDeclaration",
+                    "src": "897:4:0"
+                  }
+                ],
+                "id": 68,
+                "name": "ParameterList",
+                "src": "896:6:0"
+              }
+            ],
+            "id": 69,
+            "name": "FunctionDefinition",
+            "src": "833:70:0"
+          },
+          {
+            "attributes": {
+              "body": null,
+              "documentation": null,
+              "functionSelector": "4c105d1b",
+              "implemented": false,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "addVoters",
+              "overrides": null,
+              "scope": 121,
+              "stateMutability": "nonpayable",
+              "virtual": true,
+              "visibility": "external"
+            },
+            "children": [
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "voter",
+                      "overrides": null,
+                      "scope": 74,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "address",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "address",
+                          "stateMutability": "nonpayable",
+                          "type": "address"
+                        },
+                        "id": 70,
+                        "name": "ElementaryTypeName",
+                        "src": "925:7:0"
+                      }
+                    ],
+                    "id": 71,
+                    "name": "VariableDeclaration",
+                    "src": "925:13:0"
+                  }
+                ],
+                "id": 72,
+                "name": "ParameterList",
+                "src": "924:15:0"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 73,
+                "name": "ParameterList",
+                "src": "956:0:0"
+              }
+            ],
+            "id": 74,
+            "name": "FunctionDefinition",
+            "src": "906:51:0"
+          },
+          {
+            "attributes": {
+              "body": null,
+              "documentation": null,
+              "functionSelector": "8b4b2774",
+              "implemented": false,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "registerInsurance",
+              "overrides": null,
+              "scope": 121,
+              "stateMutability": "nonpayable",
+              "virtual": true,
+              "visibility": "external"
+            },
+            "children": [
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "airline",
+                      "overrides": null,
+                      "scope": 83,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "address",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "address",
+                          "stateMutability": "nonpayable",
+                          "type": "address"
+                        },
+                        "id": 75,
+                        "name": "ElementaryTypeName",
+                        "src": "1003:7:0"
+                      }
+                    ],
+                    "id": 76,
+                    "name": "VariableDeclaration",
+                    "src": "1003:15:0"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "passenger",
+                      "overrides": null,
+                      "scope": 83,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "address",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "address",
+                          "stateMutability": "nonpayable",
+                          "type": "address"
+                        },
+                        "id": 77,
+                        "name": "ElementaryTypeName",
+                        "src": "1020:7:0"
+                      }
+                    ],
+                    "id": 78,
+                    "name": "VariableDeclaration",
+                    "src": "1020:17:0"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "amount",
+                      "overrides": null,
+                      "scope": 83,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint256",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint256",
+                          "type": "uint256"
+                        },
+                        "id": 79,
+                        "name": "ElementaryTypeName",
+                        "src": "1039:7:0"
+                      }
+                    ],
+                    "id": 80,
+                    "name": "VariableDeclaration",
+                    "src": "1039:14:0"
+                  }
+                ],
+                "id": 81,
+                "name": "ParameterList",
+                "src": "1002:52:0"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 82,
+                "name": "ParameterList",
+                "src": "1071:0:0"
+              }
+            ],
+            "id": 83,
+            "name": "FunctionDefinition",
+            "src": "976:96:0"
+          },
+          {
+            "attributes": {
+              "body": null,
+              "documentation": null,
+              "functionSelector": "d1598dca",
+              "implemented": false,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "creditInsurees",
+              "overrides": null,
+              "scope": 121,
+              "stateMutability": "nonpayable",
+              "virtual": true,
+              "visibility": "external"
+            },
+            "children": [
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "airline",
+                      "overrides": null,
+                      "scope": 92,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "address",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "address",
+                          "stateMutability": "nonpayable",
+                          "type": "address"
+                        },
+                        "id": 84,
+                        "name": "ElementaryTypeName",
+                        "src": "1099:7:0"
+                      }
+                    ],
+                    "id": 85,
+                    "name": "VariableDeclaration",
+                    "src": "1099:15:0"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "passenger",
+                      "overrides": null,
+                      "scope": 92,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "address",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "address",
+                          "stateMutability": "nonpayable",
+                          "type": "address"
+                        },
+                        "id": 86,
+                        "name": "ElementaryTypeName",
+                        "src": "1116:7:0"
+                      }
+                    ],
+                    "id": 87,
+                    "name": "VariableDeclaration",
+                    "src": "1116:17:0"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "amount",
+                      "overrides": null,
+                      "scope": 92,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint256",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint256",
+                          "type": "uint256"
+                        },
+                        "id": 88,
+                        "name": "ElementaryTypeName",
+                        "src": "1135:7:0"
+                      }
+                    ],
+                    "id": 89,
+                    "name": "VariableDeclaration",
+                    "src": "1135:14:0"
+                  }
+                ],
+                "id": 90,
+                "name": "ParameterList",
+                "src": "1098:52:0"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 91,
+                "name": "ParameterList",
+                "src": "1167:0:0"
+              }
+            ],
+            "id": 92,
+            "name": "FunctionDefinition",
+            "src": "1075:93:0"
+          },
+          {
+            "attributes": {
+              "body": null,
+              "documentation": null,
+              "functionSelector": "1f4cea0c",
+              "implemented": false,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "getInsuredPassenger_amount",
+              "overrides": null,
+              "scope": 121,
+              "stateMutability": "nonpayable",
+              "virtual": true,
+              "visibility": "external"
+            },
+            "children": [
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "airline",
+                      "overrides": null,
+                      "scope": 101,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "address",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "address",
+                          "stateMutability": "nonpayable",
+                          "type": "address"
+                        },
+                        "id": 93,
+                        "name": "ElementaryTypeName",
+                        "src": "1207:7:0"
+                      }
+                    ],
+                    "id": 94,
+                    "name": "VariableDeclaration",
+                    "src": "1207:15:0"
+                  }
+                ],
+                "id": 95,
+                "name": "ParameterList",
+                "src": "1206:17:0"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "",
+                      "overrides": null,
+                      "scope": 101,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "address",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "address",
+                          "stateMutability": "nonpayable",
+                          "type": "address"
+                        },
+                        "id": 96,
+                        "name": "ElementaryTypeName",
+                        "src": "1249:7:0"
+                      }
+                    ],
+                    "id": 97,
+                    "name": "VariableDeclaration",
+                    "src": "1249:7:0"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "",
+                      "overrides": null,
+                      "scope": 101,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint256",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint256",
+                          "type": "uint256"
+                        },
+                        "id": 98,
+                        "name": "ElementaryTypeName",
+                        "src": "1258:7:0"
+                      }
+                    ],
+                    "id": 99,
+                    "name": "VariableDeclaration",
+                    "src": "1258:7:0"
+                  }
+                ],
+                "id": 100,
+                "name": "ParameterList",
+                "src": "1248:18:0"
+              }
+            ],
+            "id": 101,
+            "name": "FunctionDefinition",
+            "src": "1171:96:0"
+          },
+          {
+            "attributes": {
+              "body": null,
+              "documentation": null,
+              "functionSelector": "05b64e98",
+              "implemented": false,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "getPassengerCredit",
+              "overrides": null,
+              "scope": 121,
+              "stateMutability": "nonpayable",
+              "virtual": true,
+              "visibility": "external"
+            },
+            "children": [
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "passenger",
+                      "overrides": null,
+                      "scope": 108,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "address",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "address",
+                          "stateMutability": "nonpayable",
+                          "type": "address"
+                        },
+                        "id": 102,
+                        "name": "ElementaryTypeName",
+                        "src": "1298:7:0"
+                      }
+                    ],
+                    "id": 103,
+                    "name": "VariableDeclaration",
+                    "src": "1298:17:0"
+                  }
+                ],
+                "id": 104,
+                "name": "ParameterList",
+                "src": "1297:19:0"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "",
+                      "overrides": null,
+                      "scope": 108,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint256",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint256",
+                          "type": "uint256"
+                        },
+                        "id": 105,
+                        "name": "ElementaryTypeName",
+                        "src": "1342:7:0"
+                      }
+                    ],
+                    "id": 106,
+                    "name": "VariableDeclaration",
+                    "src": "1342:7:0"
+                  }
+                ],
+                "id": 107,
+                "name": "ParameterList",
+                "src": "1341:9:0"
+              }
+            ],
+            "id": 108,
+            "name": "FunctionDefinition",
+            "src": "1270:81:0"
+          },
+          {
+            "attributes": {
+              "body": null,
+              "documentation": null,
+              "functionSelector": "51cff8d9",
+              "implemented": false,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "withdraw",
+              "overrides": null,
+              "scope": 121,
+              "stateMutability": "nonpayable",
+              "virtual": true,
+              "visibility": "external"
+            },
+            "children": [
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "passenger",
+                      "overrides": null,
+                      "scope": 115,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "address",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "address",
+                          "stateMutability": "nonpayable",
+                          "type": "address"
+                        },
+                        "id": 109,
+                        "name": "ElementaryTypeName",
+                        "src": "1372:7:0"
+                      }
+                    ],
+                    "id": 110,
+                    "name": "VariableDeclaration",
+                    "src": "1372:17:0"
+                  }
+                ],
+                "id": 111,
+                "name": "ParameterList",
+                "src": "1371:19:0"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "",
+                      "overrides": null,
+                      "scope": 115,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint256",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint256",
+                          "type": "uint256"
+                        },
+                        "id": 112,
+                        "name": "ElementaryTypeName",
+                        "src": "1416:7:0"
+                      }
+                    ],
+                    "id": 113,
+                    "name": "VariableDeclaration",
+                    "src": "1416:7:0"
+                  }
+                ],
+                "id": 114,
+                "name": "ParameterList",
+                "src": "1415:9:0"
+              }
+            ],
+            "id": 115,
+            "name": "FunctionDefinition",
+            "src": "1354:71:0"
+          },
+          {
+            "attributes": {
+              "body": null,
+              "documentation": null,
+              "functionSelector": "174c7c65",
+              "implemented": false,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "multiCallsLength",
+              "overrides": null,
+              "scope": 121,
+              "stateMutability": "nonpayable",
+              "virtual": true,
+              "visibility": "external"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 116,
+                "name": "ParameterList",
+                "src": "1467:2:0"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "",
+                      "overrides": null,
+                      "scope": 120,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint256",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint",
+                          "type": "uint256"
+                        },
+                        "id": 117,
+                        "name": "ElementaryTypeName",
+                        "src": "1495:4:0"
+                      }
+                    ],
+                    "id": 118,
+                    "name": "VariableDeclaration",
+                    "src": "1495:4:0"
+                  }
+                ],
+                "id": 119,
+                "name": "ParameterList",
+                "src": "1494:6:0"
+              }
+            ],
+            "id": 120,
+            "name": "FunctionDefinition",
+            "src": "1442:59:0"
+          }
+        ],
+        "id": 121,
+        "name": "ContractDefinition",
+        "src": "33:1470:0"
+      }
+    ],
+    "id": 122,
+    "name": "SourceUnit",
+    "src": "0:1503:0"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.6.5+commit.f956cc89.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.3.4",
+  "updatedAt": "2021-04-17T21:47:13.052Z",
+  "devdoc": {
+    "methods": {}
+  },
+  "userdoc": {
+    "methods": {}
+  }
+}

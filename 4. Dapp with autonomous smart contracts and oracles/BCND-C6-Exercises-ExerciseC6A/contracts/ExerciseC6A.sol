@@ -51,6 +51,32 @@ contract ExerciseC6A {
         _;
     }
 
+        /**
+    * @dev Modifier that requires the "operational" boolean variable to be "true"
+    *      This is used on all state changing functions to pause the contract in 
+    *      the event there is an issue that needs to be fixed
+    */
+    modifier requireIsOperational() 
+    {
+        require(operational, "Contract is currently not operational");
+        _;  // All modifiers require an "_" which indicates where the function body will be added
+    }
+
+
+
+    /**
+    * @dev Get operating status of contract
+    *
+    * @return A bool that is the current operating status
+    */      
+    function isOperational() 
+                            public 
+                            view 
+                            returns(bool) 
+    {
+        return operational;
+    }
+
     /********************************************************************************************/
     /*                                       UTILITY FUNCTIONS                                  */
     /********************************************************************************************/
