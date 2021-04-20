@@ -48,9 +48,8 @@ The purpose of this project is to develop familiarity with building a decentrali
 
 This project is build cryptostar dapp that implements a star notary smart contract, where the information about people's favorite stars in the sky can be managed by means of the blockchain.
 
-### Sample Transaction of Star 
+### Sample Transaction of Star & Token Info
 
-# Token info
 * Name: `StarCoin`
 * Symbol: `SUN`
 
